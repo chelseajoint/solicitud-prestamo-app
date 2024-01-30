@@ -1,0 +1,39 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form{
+        display: flex;
+        width: 410px;
+        flex-direction: column;
+        align-items: stretch;
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+            width: 198px;
+            margin-left: auto;
+            margin-right: auto;
+      
+            &:active {
+              background-color: transparent;
+              border: 1px solid black;
+              color: black;
+            }
+      
+            &:hover {
+              background-color: gray;
+              color: white;
+            }
+        }
+    
+        > div {
+            > div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
